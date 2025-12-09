@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIOSP - Sistema de Segurança</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Show and style scrollbars for containers */
+      .custom-scrollbar::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+          background: #0f172a; /* Slate 900 */
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #334155; /* Slate 700 */
+          border-radius: 4px;
+          border: 2px solid #0f172a;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background-color: #475569; /* Slate 600 */
+      }
+      
+      /* Enable standard scrolling on body */
+      body {
+          scrollbar-width: auto;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "peerjs": "https://aistudiocdn.com/peerjs@^1.5.5",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^3.8.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-950 text-white min-h-screen w-full overflow-auto custom-scrollbar">
+    <div id="root" class="h-full w-full"></div>
+  </body>
+</html>

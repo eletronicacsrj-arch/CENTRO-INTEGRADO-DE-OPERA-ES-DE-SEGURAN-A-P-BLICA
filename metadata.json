@@ -1,0 +1,8 @@
+{
+  "name": "CIOSP - CENTRAL",
+  "description": "Sistema de despacho de ocorrências de segurança pública com suporte a IA e personalização.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
